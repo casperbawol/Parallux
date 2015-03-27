@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Parallux</title>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<header class="img-holder" >
+ <img class="blurred" id="img1b" src="img/33b.jpg" alt="">
+  <img id="img1" src="img/33.jpg" alt="">
+   
+    
+    <h1 id="heading">I work on text too!</h1>
+    
+    
+</header>
+
+
+
+<article>
+   
+<div class="code-block">
+    <p>Usage:</p>
+<pre><code>
+           $("#img1")parallax({
+            vertical : true,  
+            shift : 3  
+        });
+</code></pre>
+   
+
+    
+    
+</div>
+    
+    
+</article>
+
+
+<footer class="img-holder">
+    <p>Micro plugin by @CasperBawol</p>
+    
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="parallux.js"></script>
+<script src="blurux.js"></script>
+
+
+<script>
+
+    $(document).ready(function(){
+        
+
+        
+        
+       
+        var imageOneAndTwo = $("#img1 , #img1b"),
+            imageTwo = $("#img1b"),
+            heading = $("#heading");
+            
+        
+        
+        imageOneAndTwo.parallax({
+            vertical : true,
+            shift : 3
+        });
+        
+         imageTwo.blurux({
+            shift : 5
+        });
+        
+
+        
+           heading.parallax({
+            vertical : true,
+            shift :2,
+        });
+        
+
+        
+        
+    });
+
+    
+    
+    
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+!function(n){"use strict";n.fn.blurux=function(t){var i,c=n(this),o=n.extend({shift:3},t);return this.each(function(){n(window).scroll(function(){i=n(window).scrollTop()/o.shift,c.css({opacity:+(i/45)})})})}}(jQuery);
